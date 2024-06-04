@@ -67,9 +67,9 @@
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             label7 = new Label();
             guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
-            label8 = new Label();
             guna2TextBox6 = new Guna.UI2.WinForms.Guna2TextBox();
             label9 = new Label();
+            label8 = new Label();
             guna2TextBox7 = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)Car).BeginInit();
             SuspendLayout();
@@ -332,17 +332,6 @@
             guna2TextBox5.Size = new Size(171, 23);
             guna2TextBox5.TabIndex = 27;
             // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label8.ImageAlign = ContentAlignment.MiddleRight;
-            label8.Location = new Point(217, 296);
-            label8.Name = "label8";
-            label8.Size = new Size(98, 16);
-            label8.TabIndex = 30;
-            label8.Text = "кордината х";
-            // 
             // guna2TextBox6
             // 
             guna2TextBox6.CustomizableEdges = customizableEdges3;
@@ -354,7 +343,7 @@
             guna2TextBox6.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             guna2TextBox6.Font = new Font("Segoe UI", 9F);
             guna2TextBox6.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox6.Location = new Point(217, 315);
+            guna2TextBox6.Location = new Point(221, 315);
             guna2TextBox6.Name = "guna2TextBox6";
             guna2TextBox6.PasswordChar = '\0';
             guna2TextBox6.PlaceholderText = "";
@@ -368,11 +357,22 @@
             label9.AutoSize = true;
             label9.Font = new Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
             label9.ImageAlign = ContentAlignment.MiddleRight;
-            label9.Location = new Point(217, 343);
+            label9.Location = new Point(221, 346);
             label9.Name = "label9";
-            label9.Size = new Size(98, 16);
+            label9.Size = new Size(16, 16);
             label9.TabIndex = 32;
-            label9.Text = "кордината y";
+            label9.Text = "y";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label8.ImageAlign = ContentAlignment.MiddleRight;
+            label8.Location = new Point(221, 296);
+            label8.Name = "label8";
+            label8.Size = new Size(16, 16);
+            label8.TabIndex = 31;
+            label8.Text = "x";
             // 
             // guna2TextBox7
             // 
@@ -385,14 +385,14 @@
             guna2TextBox7.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             guna2TextBox7.Font = new Font("Segoe UI", 9F);
             guna2TextBox7.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox7.Location = new Point(217, 362);
+            guna2TextBox7.Location = new Point(221, 365);
             guna2TextBox7.Name = "guna2TextBox7";
             guna2TextBox7.PasswordChar = '\0';
             guna2TextBox7.PlaceholderText = "";
             guna2TextBox7.SelectedText = "";
             guna2TextBox7.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2TextBox7.Size = new Size(171, 23);
-            guna2TextBox7.TabIndex = 31;
+            guna2TextBox7.TabIndex = 30;
             // 
             // CreateCar
             // 
@@ -400,8 +400,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(531, 496);
             Controls.Add(label9);
-            Controls.Add(guna2TextBox7);
             Controls.Add(label8);
+            Controls.Add(guna2TextBox7);
             Controls.Add(guna2TextBox6);
             Controls.Add(label7);
             Controls.Add(guna2TextBox5);
@@ -450,8 +450,8 @@
         private Label label7;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
         private Label label9;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox7;
         private Label label8;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox7;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox6;
     }
 }

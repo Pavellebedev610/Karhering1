@@ -165,7 +165,7 @@
             label10.Enabled = false;
             label10.Font = new Font("Segoe UI Black", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label10.ForeColor = Color.Cyan;
-            label10.Location = new Point(541, 298);
+            label10.Location = new Point(517, 298);
             label10.Name = "label10";
             label10.Size = new Size(100, 40);
             label10.TabIndex = 15;
@@ -253,7 +253,7 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Label label10;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Label label3;
+        public System.Windows.Forms.Label label3;
         private Label label2;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Label label4;

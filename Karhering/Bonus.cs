@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
+
 namespace Karhering
 {
     public partial class Bonus : Form
@@ -25,10 +26,6 @@ namespace Karhering
         public Bonus()
         {
             InitializeComponent();
-
-            // Генерация случайной строки из 8 символов и установка ее в label10
-            string randomString = GenerateRandomString(8);
-            label10.Text = randomString;
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -50,23 +47,10 @@ namespace Karhering
         private void label10_Click(object sender, EventArgs e)
         {
             // Генерация случайной строки из 8 символов и установка ее в label10 при клике на label10
-            string randomString = GenerateRandomString(8);
-            label10.Text = randomString;
+            
         }
 
         // Метод для генерации случайной строки из указанного количества символов
-        private string GenerateRandomString(int length)
-        {
-            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-            char[] randomChars = new char[length];
-
-            for (int i = 0; i < length; i++)
-            {
-                randomChars[i] = chars[random.Next(chars.Length)];
-            }
-
-            return new string(randomChars);
-        }
 
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -103,6 +87,12 @@ namespace Karhering
             {
                 // Если информация о клиенте успешно получена, устанавливаем ФИО на форме
                 label3.Text = ClientInfo.bonus;
+
+                // Получаем промо для текущего пользователя
+                string promo = ClientInfo.promo ;
+
+                // Отображаем промо в label6
+                label10.Text = promo;
             }
         }
 

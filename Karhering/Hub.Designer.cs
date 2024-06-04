@@ -1108,7 +1108,7 @@
             Minutes.Controls.Add(minut);
             Minutes.CustomizableEdges = customizableEdges117;
             Minutes.FillColor = Color.FromArgb(0, 192, 192);
-            Minutes.Location = new Point(885, 49);
+            Minutes.Location = new Point(680, 8);
             Minutes.Name = "Minutes";
             Minutes.ShadowDecoration.CustomizableEdges = customizableEdges118;
             Minutes.Size = new Size(254, 282);
@@ -2377,6 +2377,7 @@
             guna2Button35.Size = new Size(56, 45);
             guna2Button35.TabIndex = 15;
             guna2Button35.Text = "500 км";
+            guna2Button35.Click += guna2Button35_Click;
             // 
             // guna2Button36
             // 
@@ -2396,6 +2397,7 @@
             guna2Button36.Size = new Size(56, 45);
             guna2Button36.TabIndex = 15;
             guna2Button36.Text = "350 км";
+            guna2Button36.Click += guna2Button36_Click;
             // 
             // guna2Button37
             // 
@@ -2415,6 +2417,7 @@
             guna2Button37.Size = new Size(56, 45);
             guna2Button37.TabIndex = 16;
             guna2Button37.Text = "180 км";
+            guna2Button37.Click += guna2Button37_Click;
             // 
             // guna2Button38
             // 
@@ -2434,6 +2437,7 @@
             guna2Button38.Size = new Size(56, 45);
             guna2Button38.TabIndex = 17;
             guna2Button38.Text = "120 км";
+            guna2Button38.Click += guna2Button38_Click;
             // 
             // guna2Button39
             // 
@@ -2453,6 +2457,7 @@
             guna2Button39.Size = new Size(56, 45);
             guna2Button39.TabIndex = 18;
             guna2Button39.Text = "0 км";
+            guna2Button39.Click += guna2Button39_Click;
             // 
             // guna2Button40
             // 
@@ -2472,6 +2477,7 @@
             guna2Button40.Size = new Size(56, 45);
             guna2Button40.TabIndex = 14;
             guna2Button40.Text = "80 км";
+            guna2Button40.Click += guna2Button40_Click;
             // 
             // label51
             // 
@@ -2541,6 +2547,7 @@
             guna2Button41.Size = new Size(56, 45);
             guna2Button41.TabIndex = 19;
             guna2Button41.Text = "7 дней";
+            guna2Button41.Click += guna2Button41_Click;
             // 
             // guna2Button42
             // 
@@ -2560,6 +2567,7 @@
             guna2Button42.Size = new Size(56, 45);
             guna2Button42.TabIndex = 15;
             guna2Button42.Text = "6 дней";
+            guna2Button42.Click += guna2Button42_Click;
             // 
             // guna2Button43
             // 
@@ -2579,6 +2587,7 @@
             guna2Button43.Size = new Size(56, 45);
             guna2Button43.TabIndex = 15;
             guna2Button43.Text = "5 дней";
+            guna2Button43.Click += guna2Button43_Click;
             // 
             // guna2Button44
             // 
@@ -2598,6 +2607,7 @@
             guna2Button44.Size = new Size(56, 45);
             guna2Button44.TabIndex = 16;
             guna2Button44.Text = "4 дня";
+            guna2Button44.Click += guna2Button44_Click;
             // 
             // guna2Button45
             // 
@@ -2617,6 +2627,7 @@
             guna2Button45.Size = new Size(56, 45);
             guna2Button45.TabIndex = 17;
             guna2Button45.Text = "3 дня";
+            guna2Button45.Click += guna2Button45_Click;
             // 
             // guna2Button46
             // 
@@ -2636,6 +2647,7 @@
             guna2Button46.Size = new Size(56, 45);
             guna2Button46.TabIndex = 18;
             guna2Button46.Text = "1 день";
+            guna2Button46.Click += guna2Button46_Click;
             // 
             // guna2Button47
             // 
@@ -2655,6 +2667,7 @@
             guna2Button47.Size = new Size(56, 45);
             guna2Button47.TabIndex = 14;
             guna2Button47.Text = "2 дня";
+            guna2Button47.Click += guna2Button47_Click;
             // 
             // panel12
             // 

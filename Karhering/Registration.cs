@@ -26,6 +26,7 @@ namespace Karhering
 
         private void button_Click(object sender, EventArgs e)
         {
+            Random random = new Random();
             Baza dataBases = new Baza();
             var fio = guna2TextBox1.Text;
             var mail = guna2TextBox3.Text;
@@ -33,8 +34,9 @@ namespace Karhering
             var number_prav = guna2TextBox4.Text;
             var telefon = guna2TextBox5.Text;
             var role = 2;
+            var promo = random.Next().ToString();
 
-            string querystring = $"insert into client(FIO, mail, password, number_prav, telefon,role) values (@fio,@mail,@password,@number_prav,@telefon,@role)";
+            string querystring = $"insert into client(FIO, mail, password, number_prav, telefon,role,promo) values (@fio,@mail,@password,@number_prav,@telefon,@role,@promo)";
 
             SqlCommand command = new SqlCommand(querystring, dataBases.getConnection());
 
@@ -44,12 +46,12 @@ namespace Karhering
             command.Parameters.AddWithValue("number_prav", number_prav);
             command.Parameters.AddWithValue("telefon", telefon);
             command.Parameters.AddWithValue("role", role);
+            command.Parameters.AddWithValue("promo", promo);
 
             dataBases.openConnection();
 
             if (command.ExecuteNonQuery() == 1)
             {
-                DataBank.Text2 = guna2TextBox5.Text;
                 MessageBox.Show("accaunt succesful create!");
                 Login frmlgn = new Login();
                 this.Hide();

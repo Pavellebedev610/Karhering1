@@ -182,8 +182,10 @@ namespace Karhering
             if (item is not CarMarker carMarker)
             {
                 return;
+
             }
             selectedMarker = carMarker;
+
         }
         private void LoadCarPhoto(string photoPath, PictureBox pictureBox)
         {
@@ -716,6 +718,138 @@ namespace Karhering
                 // Сбрасываем выбранный маркер
                 selectedMarker = null;
             }
+        }
+        private Color BaseButtonColor = Color.White;
+        private void ResetButtonColors()
+        {
+            guna2Button35.FillColor = BaseButtonColor;
+            guna2Button36.FillColor = BaseButtonColor;
+            guna2Button37.FillColor = BaseButtonColor;
+            guna2Button38.FillColor = BaseButtonColor;
+            guna2Button39.FillColor = BaseButtonColor;
+            guna2Button40.FillColor = BaseButtonColor;
+            guna2Button41.FillColor = BaseButtonColor;
+            guna2Button42.FillColor = BaseButtonColor;
+            guna2Button43.FillColor = BaseButtonColor;
+            guna2Button44.FillColor = BaseButtonColor;
+            guna2Button46.FillColor = BaseButtonColor;
+            guna2Button47.FillColor = BaseButtonColor;
+            // Добавьте сюда все остальные кнопки
+        }
+        private void guna2Button41_Click(object sender, EventArgs e)
+        {
+            label49.Text = "16087";
+            ResetButtonColors();
+            guna2Button41.FillColor = Color.WhiteSmoke;
+        }
+
+        private void guna2Button42_Click(object sender, EventArgs e)
+        {
+            label49.Text = "13789";
+            ResetButtonColors();
+            guna2Button42.FillColor = Color.WhiteSmoke;
+        }
+
+        private void guna2Button43_Click(object sender, EventArgs e)
+        {
+            label49.Text = "11491";
+            ResetButtonColors();
+            guna2Button43.FillColor = Color.WhiteSmoke;
+        }
+
+        private void guna2Button44_Click(object sender, EventArgs e)
+        {
+            label49.Text = "9676";
+            ResetButtonColors();
+            guna2Button44.FillColor = Color.WhiteSmoke;
+        }
+
+        private void guna2Button45_Click(object sender, EventArgs e)
+        {
+            label49.Text = "7257";
+            ResetButtonColors();
+            guna2Button45.FillColor = Color.WhiteSmoke;
+        }
+
+        private void guna2Button46_Click(object sender, EventArgs e)
+        {
+            label49.Text = "3144";
+            ResetButtonColors();
+            guna2Button46.FillColor = Color.WhiteSmoke;
+        }
+
+        private void guna2Button47_Click(object sender, EventArgs e)
+        {
+            label49.Text = "5322";
+            ResetButtonColors();
+            guna2Button47.FillColor = Color.WhiteSmoke;
+        }
+
+        private void guna2Button35_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(label49.Text, out int currentNumber))
+            {
+                int result = currentNumber + 500 * 11;
+                label49.Text = result.ToString();
+                ResetButtonColors();
+                guna2Button35.FillColor = Color.WhiteSmoke;
+            }
+        }
+
+        private void guna2Button36_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(label49.Text, out int currentNumber))
+            {
+                int result = currentNumber + 350 * 11;
+                label49.Text = result.ToString();
+                ResetButtonColors();
+                guna2Button36.FillColor = Color.WhiteSmoke;
+            }
+        }
+
+        private void guna2Button37_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(label49.Text, out int currentNumber))
+            {
+                int result = currentNumber + 180 * 11;
+                label49.Text = result.ToString();
+                ResetButtonColors();
+                guna2Button37.FillColor = Color.WhiteSmoke;
+            }
+        }
+
+        private void guna2Button38_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(label49.Text, out int currentNumber))
+            {
+                int result = currentNumber + 120 * 11;
+                label49.Text = result.ToString();
+                ResetButtonColors();
+                guna2Button38.FillColor = Color.WhiteSmoke;
+            }
+        }
+
+        private void guna2Button39_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(label49.Text, out int currentNumber))
+            {
+                int result = currentNumber + 0 * 11;
+                label49.Text = result.ToString();
+                ResetButtonColors();
+                guna2Button39.FillColor = Color.WhiteSmoke;
+            }
+        }
+
+        private void guna2Button40_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(label49.Text, out int currentNumber))
+            {
+                int result = currentNumber + 80 * 11;
+                label49.Text = result.ToString();
+                ResetButtonColors();
+                guna2Button40.FillColor = Color.WhiteSmoke;
+            }
+
         }
     }
 }

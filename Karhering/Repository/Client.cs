@@ -14,5 +14,6 @@
         public string rating { get; set; }
 
         public string bonus { get; set; }
+        public string promo { get; set; }
     }
 }

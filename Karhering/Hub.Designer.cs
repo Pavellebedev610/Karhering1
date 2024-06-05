@@ -543,7 +543,7 @@
             guna2Button17.FillColor = Color.FromArgb(130, 224, 224);
             guna2Button17.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             guna2Button17.ForeColor = Color.Black;
-            guna2Button17.Location = new Point(0, 48);
+            guna2Button17.Location = new Point(1, 205);
             guna2Button17.Name = "guna2Button17";
             guna2Button17.RightToLeft = RightToLeft.No;
             guna2Button17.ShadowDecoration.CustomizableEdges = customizableEdges10;
@@ -1813,24 +1813,24 @@
             // 
             UserPanel.BackColor = Color.FromArgb(130, 224, 224);
             UserPanel.Controls.Add(guna2Button19);
+            UserPanel.Controls.Add(guna2Button17);
             UserPanel.Controls.Add(guna2Button3);
             UserPanel.Controls.Add(guna2Button2);
             UserPanel.Controls.Add(guna2Button4);
             UserPanel.Dock = DockStyle.Top;
-            UserPanel.Location = new Point(0, 278);
+            UserPanel.Location = new Point(0, 212);
             UserPanel.Name = "UserPanel";
-            UserPanel.Size = new Size(202, 320);
+            UserPanel.Size = new Size(202, 280);
             UserPanel.TabIndex = 14;
             // 
             // AdminPanel
             // 
             AdminPanel.BackColor = Color.FromArgb(130, 224, 224);
             AdminPanel.Controls.Add(guna2Button6);
-            AdminPanel.Controls.Add(guna2Button17);
             AdminPanel.Dock = DockStyle.Top;
             AdminPanel.Location = new Point(0, 157);
             AdminPanel.Name = "AdminPanel";
-            AdminPanel.Size = new Size(202, 121);
+            AdminPanel.Size = new Size(202, 55);
             AdminPanel.TabIndex = 14;
             // 
             // FullPanel

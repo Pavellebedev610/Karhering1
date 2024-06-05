@@ -15,5 +15,6 @@
 
         public string bonus { get; set; }
         public string promo { get; set; }
+        public int role {  get; set; }
     }
 }

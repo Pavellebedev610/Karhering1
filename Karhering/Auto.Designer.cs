@@ -34,15 +34,14 @@
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             label1 = new Label();
             guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(components);
-            guna2BorderlessForm2 = new Guna.UI2.WinForms.Guna2BorderlessForm(components);
-            guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             id_car = new DataGridViewTextBoxColumn();
             marka_auto = new DataGridViewTextBoxColumn();
             model_auto = new DataGridViewTextBoxColumn();
@@ -50,6 +49,10 @@
             god_vipuska = new DataGridViewTextBoxColumn();
             probeg = new DataGridViewTextBoxColumn();
             toplivo = new DataGridViewTextBoxColumn();
+            guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(components);
+            guna2BorderlessForm2 = new Guna.UI2.WinForms.Guna2BorderlessForm(components);
+            guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            button = new Guna.UI2.WinForms.Guna2Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
             SuspendLayout();
@@ -116,10 +119,10 @@
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
             guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             guna2DataGridView1.GridColor = Color.FromArgb(231, 229, 255);
-            guna2DataGridView1.Location = new Point(0, 111);
+            guna2DataGridView1.Location = new Point(0, 112);
             guna2DataGridView1.Name = "guna2DataGridView1";
             guna2DataGridView1.RowHeadersVisible = false;
-            guna2DataGridView1.Size = new Size(1167, 508);
+            guna2DataGridView1.Size = new Size(1167, 365);
             guna2DataGridView1.TabIndex = 3;
             guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -143,37 +146,6 @@
             guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
             guna2DataGridView1.CellContentClick += guna2DataGridView1_CellContentClick;
-            // 
-            // guna2BorderlessForm1
-            // 
-            guna2BorderlessForm1.ContainerControl = this;
-            guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
-            guna2BorderlessForm1.TransparentWhileDrag = true;
-            // 
-            // guna2BorderlessForm2
-            // 
-            guna2BorderlessForm2.ContainerControl = this;
-            guna2BorderlessForm2.DockIndicatorTransparencyValue = 0.6D;
-            guna2BorderlessForm2.TransparentWhileDrag = true;
-            // 
-            // guna2Button2
-            // 
-            guna2Button2.BackColor = Color.Gray;
-            guna2Button2.CustomizableEdges = customizableEdges3;
-            guna2Button2.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button2.FillColor = Color.White;
-            guna2Button2.Font = new Font("Segoe UI", 9F);
-            guna2Button2.ForeColor = Color.Gray;
-            guna2Button2.Image = Properties.Resources.cancel_cross_icon_icons_com_71726;
-            guna2Button2.Location = new Point(1139, 0);
-            guna2Button2.Name = "guna2Button2";
-            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2Button2.Size = new Size(28, 25);
-            guna2Button2.TabIndex = 0;
-            guna2Button2.Click += guna2Button2_Click;
             // 
             // id_car
             // 
@@ -210,12 +182,66 @@
             toplivo.HeaderText = "toplivo";
             toplivo.Name = "toplivo";
             // 
+            // guna2BorderlessForm1
+            // 
+            guna2BorderlessForm1.ContainerControl = this;
+            guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
+            guna2BorderlessForm1.TransparentWhileDrag = true;
+            // 
+            // guna2BorderlessForm2
+            // 
+            guna2BorderlessForm2.ContainerControl = this;
+            guna2BorderlessForm2.DockIndicatorTransparencyValue = 0.6D;
+            guna2BorderlessForm2.TransparentWhileDrag = true;
+            // 
+            // guna2Button2
+            // 
+            guna2Button2.BackColor = Color.Gray;
+            guna2Button2.CustomizableEdges = customizableEdges5;
+            guna2Button2.DisabledState.BorderColor = Color.DarkGray;
+            guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2Button2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2Button2.FillColor = Color.White;
+            guna2Button2.Font = new Font("Segoe UI", 9F);
+            guna2Button2.ForeColor = Color.Gray;
+            guna2Button2.Image = Properties.Resources.cancel_cross_icon_icons_com_71726;
+            guna2Button2.Location = new Point(1139, 0);
+            guna2Button2.Name = "guna2Button2";
+            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            guna2Button2.Size = new Size(28, 25);
+            guna2Button2.TabIndex = 0;
+            guna2Button2.Click += guna2Button2_Click;
+            // 
+            // button
+            // 
+            button.Animated = true;
+            button.AnimatedGIF = true;
+            button.AutoRoundedCorners = true;
+            button.BorderRadius = 18;
+            button.CustomizableEdges = customizableEdges3;
+            button.DisabledState.BorderColor = Color.DarkGray;
+            button.DisabledState.CustomBorderColor = Color.DarkGray;
+            button.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            button.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            button.FillColor = Color.FromArgb(128, 255, 255);
+            button.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button.ForeColor = Color.Transparent;
+            button.Location = new Point(1008, 483);
+            button.Name = "button";
+            button.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            button.Size = new Size(148, 38);
+            button.TabIndex = 14;
+            button.Text = "Удалить авто";
+            button.Click += button_Click;
+            // 
             // Auto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1168, 622);
+            ClientSize = new Size(1168, 533);
+            Controls.Add(button);
             Controls.Add(panel1);
             Controls.Add(guna2Button2);
             Controls.Add(guna2DataGridView1);
@@ -243,5 +269,6 @@
         private DataGridViewTextBoxColumn god_vipuska;
         private DataGridViewTextBoxColumn probeg;
         private DataGridViewTextBoxColumn toplivo;
+        private Guna.UI2.WinForms.Guna2Button button;
     }
 }

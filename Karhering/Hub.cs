@@ -32,7 +32,7 @@ namespace Karhering
     {
         private Bitmap resizedImage;
         //private Timer timer;
-        public Client ClientInfo { get; set; }
+        public Client ClientInfo {  get; set; }
         public int UserId { get; set; }
         public Hub()
         {
@@ -304,6 +304,15 @@ namespace Karhering
                 // Если информация о клиенте успешно получена, устанавливаем ФИО на форме
                 label6.Text = ClientInfo.FIO;
                 label37.Text = ClientInfo.rating;
+            }
+
+            if (ClientInfo != null && ClientInfo.role == 1)
+            {
+                pnlAdmin.Visible = true;
+            }
+            else
+            {
+                pnlAdmin.Visible = false;
             }
         }
 

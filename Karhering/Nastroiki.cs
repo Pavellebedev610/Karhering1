@@ -59,8 +59,39 @@ namespace Karhering
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-            Delete log = new Delete();
-            log.Show();
+            DialogResult result = MessageBox.Show("Вы уверены, что хотите удалить свой аккаунт? Это действие нельзя отменить.", "Подтверждение удаления аккаунта", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                string queryDeleteAccount = "DELETE FROM users WHERE id_user = @UserId";
+
+                using (SqlCommand command = new SqlCommand(queryDeleteAccount, baza.getConnection()))
+                {
+                    command.Parameters.AddWithValue("@UserId", UserId);
+
+                    try
+                    {
+                        baza.openConnection();
+                        int rowsAffected = command.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Аккаунт успешно удален");
+                            // Закрыть приложение или перенаправить на форму авторизации
+                        }
+                        else
+                        {
+                            MessageBox.Show("Аккаунт не найден");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Ошибка при удалении аккаунта: " + ex.Message);
+                    }
+                    finally
+                    {
+                        baza.closeConnection();
+                    }
+                }
+            }
         }
 
         private void Nastroiki_Load(object sender, EventArgs e)

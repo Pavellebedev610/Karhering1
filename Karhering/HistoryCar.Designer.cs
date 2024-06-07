@@ -34,6 +34,7 @@
             label3 = new Label();
             label2 = new Label();
             guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            label1 = new Label();
             guna2CustomGradientPanel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -72,6 +73,7 @@
             // guna2CustomGradientPanel1
             // 
             guna2CustomGradientPanel1.BorderRadius = 18;
+            guna2CustomGradientPanel1.Controls.Add(label1);
             guna2CustomGradientPanel1.Controls.Add(label4);
             guna2CustomGradientPanel1.Controls.Add(label3);
             guna2CustomGradientPanel1.Controls.Add(label2);
@@ -85,6 +87,17 @@
             guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2CustomGradientPanel1.Size = new Size(478, 65);
             guna2CustomGradientPanel1.TabIndex = 5;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label1.Location = new Point(436, 12);
+            label1.Name = "label1";
+            label1.Size = new Size(19, 21);
+            label1.TabIndex = 3;
+            label1.Text = "₽";
             // 
             // HistoryCar
             // 
@@ -104,5 +117,6 @@
         public Label label3;
         public Label label2;
         public Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
+        public Label label1;
     }
 }

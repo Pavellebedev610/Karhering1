@@ -87,5 +87,10 @@ namespace Karhering
         {
 
         }
+
+        private void PanelInfo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

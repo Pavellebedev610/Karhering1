@@ -83,6 +83,7 @@
             PanelInfo.Name = "PanelInfo";
             PanelInfo.Size = new Size(500, 498);
             PanelInfo.TabIndex = 3;
+            PanelInfo.Paint += PanelInfo_Paint;
             // 
             // Trips
             // 

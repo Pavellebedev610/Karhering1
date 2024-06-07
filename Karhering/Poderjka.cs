@@ -77,7 +77,7 @@ namespace Karhering
 
         private void button_Click(object sender, EventArgs e)
         {
-            guna2TextBox2.Clear();
+            textBox2.Clear();
             textBox1.Clear();
             MessageBox.Show("Ваше сообщение отправлено");
         }

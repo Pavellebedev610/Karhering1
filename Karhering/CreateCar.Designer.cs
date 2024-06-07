@@ -359,9 +359,9 @@
             label9.ImageAlign = ContentAlignment.MiddleRight;
             label9.Location = new Point(221, 346);
             label9.Name = "label9";
-            label9.Size = new Size(16, 16);
+            label9.Size = new Size(108, 16);
             label9.TabIndex = 32;
-            label9.Text = "y";
+            label9.Text = "Координата y";
             // 
             // label8
             // 
@@ -370,9 +370,9 @@
             label8.ImageAlign = ContentAlignment.MiddleRight;
             label8.Location = new Point(221, 296);
             label8.Name = "label8";
-            label8.Size = new Size(16, 16);
+            label8.Size = new Size(108, 16);
             label8.TabIndex = 31;
-            label8.Text = "x";
+            label8.Text = "Координата x";
             // 
             // guna2TextBox7
             // 

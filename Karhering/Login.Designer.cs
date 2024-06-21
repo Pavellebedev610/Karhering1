@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             panel1 = new Panel();
@@ -114,7 +114,7 @@
             button.AnimatedGIF = true;
             button.AutoRoundedCorners = true;
             button.BorderRadius = 18;
-            button.CustomizableEdges = customizableEdges9;
+            button.CustomizableEdges = customizableEdges1;
             button.DisabledState.BorderColor = Color.DarkGray;
             button.DisabledState.CustomBorderColor = Color.DarkGray;
             button.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -124,7 +124,7 @@
             button.ForeColor = Color.Transparent;
             button.Location = new Point(79, 372);
             button.Name = "button";
-            button.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            button.ShadowDecoration.CustomizableEdges = customizableEdges2;
             button.Size = new Size(138, 38);
             button.TabIndex = 13;
             button.Text = "Войти";
@@ -132,7 +132,7 @@
             // 
             // guna2TextBox3
             // 
-            guna2TextBox3.CustomizableEdges = customizableEdges11;
+            guna2TextBox3.CustomizableEdges = customizableEdges3;
             guna2TextBox3.DefaultText = "";
             guna2TextBox3.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             guna2TextBox3.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -146,10 +146,11 @@
             guna2TextBox3.PasswordChar = '●';
             guna2TextBox3.PlaceholderText = "";
             guna2TextBox3.SelectedText = "";
-            guna2TextBox3.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            guna2TextBox3.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2TextBox3.Size = new Size(200, 29);
             guna2TextBox3.TabIndex = 14;
             guna2TextBox3.UseSystemPasswordChar = true;
+            guna2TextBox3.TextChanged += guna2TextBox3_TextChanged_1;
             // 
             // label3
             // 
@@ -205,7 +206,7 @@
             // guna2Button7
             // 
             guna2Button7.BackColor = Color.White;
-            guna2Button7.CustomizableEdges = customizableEdges13;
+            guna2Button7.CustomizableEdges = customizableEdges5;
             guna2Button7.DisabledState.BorderColor = Color.DarkGray;
             guna2Button7.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button7.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -216,14 +217,14 @@
             guna2Button7.Image = Properties.Resources.cancel_cross_icon_icons_com_71726;
             guna2Button7.Location = new Point(1154, 1);
             guna2Button7.Name = "guna2Button7";
-            guna2Button7.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            guna2Button7.ShadowDecoration.CustomizableEdges = customizableEdges6;
             guna2Button7.Size = new Size(28, 25);
             guna2Button7.TabIndex = 23;
             guna2Button7.Click += guna2Button7_Click;
             // 
             // guna2TextBox1
             // 
-            guna2TextBox1.CustomizableEdges = customizableEdges15;
+            guna2TextBox1.CustomizableEdges = customizableEdges7;
             guna2TextBox1.DefaultText = "";
             guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             guna2TextBox1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -237,7 +238,7 @@
             guna2TextBox1.PasswordChar = '\0';
             guna2TextBox1.PlaceholderText = "";
             guna2TextBox1.SelectedText = "";
-            guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges8;
             guna2TextBox1.Size = new Size(200, 29);
             guna2TextBox1.TabIndex = 12;
             guna2TextBox1.TextChanged += guna2TextBox1_TextChanged;

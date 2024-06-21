@@ -85,7 +85,7 @@ namespace Karhering
         }
         private void Login_Load(object sender, EventArgs e)
         {
-
+            guna2TextBox1.PlaceholderText = "maksim@mail.ru";
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -111,6 +111,11 @@ namespace Karhering
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox3_TextChanged_1(object sender, EventArgs e)
         {
 
         }

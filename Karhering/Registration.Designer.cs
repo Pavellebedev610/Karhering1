@@ -188,6 +188,7 @@
             guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges6;
             guna2TextBox1.Size = new Size(200, 29);
             guna2TextBox1.TabIndex = 19;
+            guna2TextBox1.TextChanged += guna2TextBox1_TextChanged;
             // 
             // label5
             // 
@@ -218,6 +219,7 @@
             guna2TextBox3.ShadowDecoration.CustomizableEdges = customizableEdges8;
             guna2TextBox3.Size = new Size(200, 29);
             guna2TextBox3.TabIndex = 23;
+            guna2TextBox3.TextChanged += guna2TextBox3_TextChanged;
             // 
             // label6
             // 
@@ -248,6 +250,7 @@
             guna2TextBox4.ShadowDecoration.CustomizableEdges = customizableEdges10;
             guna2TextBox4.Size = new Size(200, 29);
             guna2TextBox4.TabIndex = 25;
+            guna2TextBox4.TextChanged += guna2TextBox4_TextChanged;
             // 
             // label7
             // 
